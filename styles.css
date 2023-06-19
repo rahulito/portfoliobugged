@@ -5,20 +5,24 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: url('2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #ffffff;
 }
 
-.name-link {
+.name-link, .name-link:visited {
   text-decoration: none;
   color: inherit;
 }
 
 /* Estilos de encabezado */
 header {
-  background-color: #f2f2f2;
   padding: 20px;
 }
 
@@ -36,15 +40,27 @@ nav li {
   margin-right: 10px;
 }
 
-nav a {
+nav a, nav a:visited {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Estilos de secciones */
 section {
   padding: 20px;
   margin-bottom: 20px;
+  border-top: 5px solid #ffffff; /* Línea divisoria */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#contact {
+  border-bottom: 5px solid #ffffff; /* Línea divisoria al final de la última sección */
 }
 
 /* Estilos de proyectos */
@@ -58,7 +74,32 @@ section {
 
 /* Estilos de pie de página */
 footer {
-  background-color: #f2f2f2;
   padding: 10px;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.resume-section {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: auto; 
+  margin-top: 20px;
+}
+
+#header-dragon {
+  width: 200px;
+  height: 92px;
+  float: right;
+  margin: 0;  /* Esto elimina cualquier margen alrededor de la imagen */
+  padding: 0; /* Esto elimina cualquier relleno alrededor de la imagen */
+  vertical-align: top; /* Esto alinea la imagen con la parte superior de su contenedor */
+}
+#phone {
+  width: 30px;
+  height: 30px;
+  margin: 0;  /* Esto elimina cualquier margen alrededor de la imagen */
+  padding: 0; /* Esto elimina cualquier relleno alrededor de la imagen */
+  vertical-align: top; /* Esto alinea la imagen con la parte superior de su contenedor */
 }
